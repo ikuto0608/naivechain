@@ -84,7 +84,7 @@ class Node
       previous_block = @blockchain.last
       next_index = previous_block["index"] + 1
       next_timestamp = Time.now.to_i
-      next_data = "Smart contract" + next_index.to_S
+      next_data = "Smart contract" + next_index.to_s
       next_hash = calculate_hash(
         next_index,
         previous_block["hash"],
